@@ -283,4 +283,7 @@ input:checked + .slider:before {
     .footer {
         justify-content: center;
     }
+     #timeDate{
+        display: none;
+    }
 }
