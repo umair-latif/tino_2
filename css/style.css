@@ -256,7 +256,7 @@ input:checked + .slider:before {
     }
 }
 
-@media (max-width: 620px /* 480px */) {
+@media (max-width: /*620px*/  480px ) {
     .menu-container {
         left: -12.5rem;
         margin-top: 0;
@@ -283,10 +283,4 @@ input:checked + .slider:before {
     .footer {
         justify-content: center;
     }
-    /* .size-btn{
-        display: none;
-    } */
-    /* .size-btn{
-        display: none; 
-    } */
 }
