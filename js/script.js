@@ -159,12 +159,12 @@ function setMenuWidth(){
           }, 200);
           
     }
-    var x = window.matchMedia("(max-width: 620px)");
+    var x = window.matchMedia("(max-width: 480px)");
     adjustContentWidth(x);
 }
 
 // Attach event listener on x-state changes for mobile screens
-var x = window.matchMedia("(max-width: 620px)");
+var x = window.matchMedia("(max-width: 480px)");
 x.addEventListener("change", function() {
     adjustContentWidth(x);
   });
