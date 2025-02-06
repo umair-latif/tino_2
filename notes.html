@@ -1,0 +1,46 @@
+<div id= "new-note" class="">
+    <div class="newnote-header">
+        <!-- <a class="icon_btn link_inactive hide"><i class="bi bi-sticky"></i> Notiz</a>
+        <a  class="icon_btn link_inactive hide"><i class="bi bi-list-check"></i> List</a> -->
+        <!-- <p>Dein TiNo-Zettel wartet...</p> -->
+    </div>
+    <div id="text-box" >
+        <textarea id="new-text" placeholder="Write a note..."></textarea>
+    </div>
+    <input type="button" onclick="addNote()" value="Speichern" class="transparent_btn savenew_btn">
+</div>
+<div id="notes-area">
+<template id="note-template">
+    <div class="note">
+        <div class="note-header">
+            <p class="date">date:</p>
+            <a href="" class="icon-btn edit-btn bi-pencil-square" title="Edit"></a>
+            <a href="" class="icon-btn save-btn bi-floppy inactive-link" title="Save"></a>
+            <a href="" class="icon-btn del-btn bi-trash" title="Delete"></a>
+            <a href="" class="icon-btn size-btn bi-arrows-angle-expand" title="Expand/Contract"></a>
+        </div>
+        <textarea class="note-text inactive-text"></textarea>
+    </div>
+</template>
+<template id="list-template">
+    <div class="note">
+        <div class="note-header">
+            <p class="date">date:</p>
+            <a href="" class="icon-btn edit-btn bi-pencil-square" title="Edit"></a>
+            <a href="" class="icon-btn save-btn bi-floppy inactive-link" title="Save"></a>
+            <a href="" class="icon-btn del-btn bi-trash" title="Delete"></a>
+            <a href="" class="icon-btn size-btn bi-arrows-angle-expand" title="Expand/Contract"></a>
+        </div>
+        <!-- <textarea class="note-text inactive-text"></textarea> -->
+         <div>
+            <div>
+               <p id="list-input"></p>
+               
+            </div>
+            <ul id="check-list">
+
+            </ul>
+         </div>
+    </div>
+</template>
+</div> 

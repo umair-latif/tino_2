@@ -1,0 +1,57 @@
+<div id="settings-container">
+    <h3>Theme Preferences</h3>
+    <table>
+        <tbody>
+            <tr>
+                <td>Date format</td>
+                <td>
+                    <select id="dateFormat">
+                        <option value="short">(01.12.2000)</option>
+                        <option value="long">(Sunday, December 1, 2000)</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Display time in 24H-format</td>
+                <td>
+                    <label class="switch">
+                        <input type="checkbox" id="timeFormat">
+                        <span class="slider"></span>
+                    </label>
+                </td>
+            </tr>
+            <tr class="inactive-text">
+                <td>Display weather</td>
+                <td>
+                    <label class="switch">
+                        <input type="checkbox" id="weatherToggle" disabled>
+                        <span class="slider"></span>
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>Content layout</td>
+                <td>
+                    <select id="layout">
+                        <option value="grid">Grid</option>
+                        <option value="list">List</option>
+                    </select>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <h3>Privacy Preferences</h3>
+    <table>
+        <tbody>
+            <tr>
+                <td>Download all data</td>
+                <td><input type="button" onclick="downloadAllData()" value="Download" class="transparent_btn downloadAll"></td>
+            </tr>
+            <tr>
+                <td>Delete all data</td>
+                <td><input type="button" onclick="deleteAllData()" value="Delete" class="transparent_btn deleteAll"></td>
+            </tr>
+        </tbody>
+    </table>
+    <p id="usedLocalStorage"></p>
+</div>
